@@ -1,7 +1,17 @@
 import * as fs from 'fs'
+import path from 'path';
+import {fileURLToPath} from 'url';
 // const index=fs.readFileSync('index.html','utf-8')
-const data=JSON.parse(fs.readFileSync('data.json','utf-8'))
-const users=data.users;
+
+
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+// // console.log('directory-name', __dirname);
+
+
+// const data=JSON.parse(fs.readFileSync(path.resolve(__dirname,'data.json'),'utf-8'))
+// const users=data.users;
+
 
 export const createproduct=(req,res)=>{
     // res.send("hello")
